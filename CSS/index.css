@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* 
-normalize.css code is from line 1 to 350. My CSS Styles come after that.
+normalize.css code is from line 1 to 355. My CSS Styles come after that.
 This is just due to presenting all the CSS code inside one file in Codepen.
 */
 
@@ -350,4 +350,19 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* Desktop version made first and then apply mobile version */
+
+:root {
+  --color-primary: #363636;
+  --color-secondary: #f1f1f1;
+  --color-accent: #fdd80f;
+  --color-headings: #000;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
