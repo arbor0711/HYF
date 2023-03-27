@@ -92,7 +92,7 @@ p {
   box-shadow: inset 1rem 1rem rgba(22, 0, 81, 0.118);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .btn {
     font-size: 1.5 rem;
   }
@@ -117,7 +117,7 @@ p {
 
 .article-text {
   margin-left: 30px;
-  max-width: 300px;
+  min-width: 250px;
 }
 
 .article-footer {
@@ -131,7 +131,7 @@ p {
   flex-direction: row;
   gap: 10px;
   justify-content: center;
-  margin: 0 15%;
+  margin: 0 10%;
 }
 
 .flex__item--1x2 {
