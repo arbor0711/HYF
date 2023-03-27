@@ -366,3 +366,55 @@ template {
 *::before {
   box-sizing: border-box;
 }
+
+/* Typography */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+
+/* Set 1 rem equal to 10px */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-primary);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-family: "Oleo Script Swash Caps", cursive;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024) {
+  body {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
