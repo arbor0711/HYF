@@ -202,3 +202,20 @@ p {
     display: flex;
   }
 }
+
+/* Hero block */
+.slider-button {
+  margin: 150px 20px;
+  opacity: 0.5;
+  width: 40px;
+}
+
+.slider-button-right {
+  float: right;
+  rotate: 90deg;
+}
+
+.slider-button-left {
+  float: left;
+  rotate: -90deg;
+}
