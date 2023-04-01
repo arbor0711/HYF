@@ -204,18 +204,60 @@ p {
 }
 
 /* Hero block */
-.slider-button {
-  margin: 150px 20px;
-  opacity: 0.5;
-  width: 40px;
+.hero-block {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
-.slider-button-right {
-  float: right;
+.hero-headline {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  color: var(--color-secondary);
+
+  text-shadow: var(--color-headings) 1px 0 10px;
+}
+
+.hero-title {
+  font-size: 8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero-text {
+  font-size: 1rem;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 300px; /* adjust as needed */
+  max-height: 5rem; /* adjust as needed */
+  line-height: 1.5rem; /* adjust as needed */
+}
+
+.slider-btn {
+  position: absolute;
+  opacity: 0.5;
+  width: 20px;
+  cursor: pointer;
+  top: 250px;
+}
+
+.slider-btn-right {
+  right: 0;
   rotate: 90deg;
 }
 
-.slider-button-left {
-  float: left;
+.slider-btn-left {
+  left: 0;
   rotate: -90deg;
 }
