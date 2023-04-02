@@ -206,8 +206,9 @@ p {
 /* Hero block */
 .hero-block {
   position: relative;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
+  width: 100%;
 }
 .hero-img {
   position: absolute;
@@ -219,12 +220,15 @@ p {
 }
 
 .hero-headline {
-  position: relative;
+  position: absolute;
   top: 20%;
   left: 10%;
-  color: var(--color-secondary);
-
   text-shadow: var(--color-headings) 1px 0 10px;
+}
+/* FIXME: */
+.hero-headline h2,
+p {
+  color: var(--color-secondary);
 }
 
 .hero-title {
@@ -234,8 +238,8 @@ p {
 }
 
 .hero-text {
-  font-size: 1rem;
-  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -247,17 +251,25 @@ p {
 .slider-btn {
   position: absolute;
   opacity: 0.5;
-  width: 20px;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  font-size: 1em;
+  background: transparent;
+  border: none;
+  color: var(--color-secondary);
   cursor: pointer;
-  top: 250px;
 }
 
 .slider-btn-right {
-  right: 0;
-  rotate: 90deg;
+  right: 20px;
 }
 
 .slider-btn-left {
-  left: 0;
-  rotate: -90deg;
+  left: 20px;
+}
+
+@media screen and (min-width: 726px) {
+  .hero-title {
+    font-size: 6rem;
+  }
 }
