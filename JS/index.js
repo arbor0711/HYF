@@ -1,27 +1,26 @@
 // Navbar menu
 
-// const toggler = document.querySelector("#toggler");
+const toggler = document.querySelector("#toggler");
 
-// const collapse = () => {
-//   console.log("clicked");
-//   const navbarList = document.querySelector("#list");
-//   console.log(navbarList);
-//   navbarList.classList.toggle("collapsible");
-// };
+const collapse = () => {
+  console.log("clicked");
+  const navbarList = document.querySelector("#list");
+  console.log(navbarList);
+  navbarList.classList.toggle("collapsible");
+};
 
-// toggler.addEventListener("click", collapse);
+toggler.addEventListener("click", collapse);
 
-// Hero img
-// const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-// const sliderRight = document.querySelector("#sliderButtonRight");
-// const sliderLeft = document.querySelector("#sliderButtonLeft");
+const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+const sliderRight = document.querySelector("#sliderButtonRight");
+const sliderLeft = document.querySelector("#sliderButtonLeft");
 
-// const slider = () => {
-//   // TODO: we should add id="hero__img" to image
-//   const heroImg = document.querySelector("#heroImg");
+const slider = () => {
+  // TODO: we should add id="hero__img" to image
+  const heroImg = document.querySelector("#heroImg");
 
-//   console.log(heroImg.src);
-// };
+  console.log(heroImg.src);
+};
 
 // slider();
 const banners = [

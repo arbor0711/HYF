@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYF Project</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans:ital,wght@0,400;1,300&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img
+          src="/images/menu.svg"
+          class="navbar__icon navbar__toggler"
+          id="toggler"
+          alt=""
+        />
+        <ul class="navbar__list collapsible" id="list">
+          <li class="navbar__item"><a href="#">ONE</a></li>
+          <li class="navbar__item"><a href="#">TWO</a></li>
+          <li class="navbar__item"><a href="#">THREE</a></li>
+        </ul>
+      </nav>
+      <section id="banner" class="hero-block">
+        <img id="heroImg" class="hero-img" src="" />
+        <div class="hero-headline">
+          <h2 class="hero-title"></h2>
+          <p class="hero-text"></p>
+          <button class="btn btn--primary">More</button>
+        </div>
+        <button class="slider-btn slider-btn-right" id="prevBtn">&gt;</button>
+        <button class="slider-btn slider-btn-left" id="nextBtn">&lt;</button>
+      </section>
+    </header>
+    <main>
+      <section class="course-card">
+        <a href="#">
+          <img
+            src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+            alt="learning guitar course"
+          />
+          <div class="image-overlay">
+            <h2 class="image-title">Your Image Title</h2>
+          </div>
+        </a>
+      </section>
+
+      <section class="flex-container">
+        <article class="article flex__item--1x2">
+          <div class="article-body">
+            <p class="separator">
+              CH 12 kljh
+              <svg class="line" height="1" width="100px">
+                <line x1="0" y1="0" x2="10vw" y2="0" />
+              </svg>
+            </p>
+            <h2 class="article-title">The Designer's Role</h2>
+            <p class="article-text">text</p>
+          </div>
+          <div class="article-footer">
+            <a class="btn btn--primary" href="#">Read more...</a>
+          </div>
+        </article>
+
+        <div class="flex__item--1x2">
+          <img style="width: 100%" src="./images/minimal1.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-block">
+        <div class="footer-section">
+          <div class="join-banner-content">
+            <h2>Teach the world online</h2>
+            <p>
+              Create an online video course, reach students across the globe,
+              and earn money
+            </p>
+          </div>
+          <div class="join-banner-btn">
+            <a href="#" class="btn btn--primary">Let's Start</a>
+          </div>
+        </div>
+
+        <div class="footer-section footer-main">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Start Your Business</a></li>
+              <li><a href="#">Multiple Account</a></li>
+              <li><a href="#">Get the app</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help and Support</a></li>
+              <li><a href="#">Affiliate</a></li>
+              <li><a href="#">Investore</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie setting</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Accessibility statement</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <a class="btn btn--primary" href="#"><span></span>English</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
