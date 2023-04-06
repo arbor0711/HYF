@@ -86,7 +86,10 @@ let scrollToTopBtn = document.querySelector("#scrollToTopBtn");
 scrollToTopBtn.addEventListener("click", scrollToTop);
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     scrollToTopBtn.style.display = "block";
   } else {
     scrollToTopBtn.style.display = "none";
