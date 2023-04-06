@@ -12,19 +12,27 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <img
-          src="/images/menu.svg"
-          class="navbar__icon navbar__toggler"
-          id="toggler"
-          alt=""
-        />
+      <nav class="navbar" style="margin: 0; padding: 0" ;>
+        <div class="navbar-mobile-version">
+          <img
+            src="/images/menu.svg"
+            class="navbar__icon navbar__toggler"
+            id="toggler"
+            alt=""
+          />
+          <a class="btn btn--outline" href="#">Login</a>
+        </div>
         <ul class="navbar__list collapsible" id="list">
-          <li class="navbar__item"><a href="#">ONE</a></li>
-          <li class="navbar__item"><a href="#">TWO</a></li>
-          <li class="navbar__item"><a href="#">THREE</a></li>
+          <li class="navbar__item"><a href="#">Home</a></li>
+          <li class="navbar__item">
+            <a href="https://codepen.io/arbor0711" target="_blank">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="mailto:arbor0711@gmail.com">Contact Me</a>
+          </li>
         </ul>
       </nav>
+
       <section id="banner" class="hero-block">
         <img id="heroImg" class="hero-img" src="" />
         <div class="hero-headline">
@@ -35,13 +43,110 @@
         <button class="slider-btn slider-btn-right" id="prevBtn">&gt;</button>
         <button class="slider-btn slider-btn-left" id="nextBtn">&lt;</button>
       </section>
+
+      <section class="block search-block">
+        <form class="search-form" action="">
+          <div class="search-box">
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Search Event"
+            /><button class="search-btn" type="submit">
+              <span>&#x1F50D; </span>
+            </button>
+          </div>
+          <select class="sortby" name="" id="">
+            <option value="">--sort by--</option>
+            <option value="">Date</option>
+            <option value="">Price low to hight</option>
+            <option value="">Distance to your location</option>
+          </select>
+        </form>
+      </section>
     </header>
+
     <main>
-      <div class="course-cards-container">
+      <section>
+        <h1>EVENTS & FESTIVALS IN THE NETHERLANDS</h1>
+      </section>
+
+      <div class="block course-cards-container">
         <section class="course-card card">
           <a href="#">
             <img
               src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+              alt="learning guitar course"
+            />
+            <div class="image-overlay">
+              <h2 class="image-title">Your Image Title</h2>
+            </div>
+          </a>
+        </section>
+
+        <section class="course-card card">
+          <a href="#">
+            <img
+              src="https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="New conferences"
+            />
+            <div class="image-overlay">
+              <h2 class="image-title">Your Image Title</h2>
+            </div>
+          </a>
+        </section>
+
+        <section class="course-card card">
+          <a href="#">
+            <img
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              alt="learning guitar course"
+            />
+            <div class="image-overlay">
+              <h2 class="image-title">Your Image Title</h2>
+            </div>
+          </a>
+        </section>
+
+        <section class="course-card card">
+          <a href="#">
+            <img
+              src="https://images.unsplash.com/photo-1582192730841-2a682d7375f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80`"
+              alt="learning guitar course"
+            />
+            <div class="image-overlay">
+              <h2 class="image-title">Your Image Title</h2>
+            </div>
+          </a>
+        </section>
+
+        <section class="course-card card">
+          <a href="#">
+            <img
+              src="https://images.unsplash.com/photo-1560439514-4e9645039924?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`"
+              alt="learning guitar course"
+            />
+            <div class="image-overlay">
+              <h2 class="image-title">Your Image Title</h2>
+            </div>
+          </a>
+        </section>
+
+        <section class="course-card card">
+          <a href="#">
+            <img
+              src="https://images.unsplash.com/photo-1560439514-e960a3ef5019?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`"
+              alt="learning guitar course"
+            />
+            <div class="image-overlay">
+              <h2 class="image-title">Your Image Title</h2>
+            </div>
+          </a>
+        </section>
+
+        <section class="course-card card">
+          <a href="#">
+            <img
+              src="https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`"
               alt="learning guitar course"
             />
             <div class="image-overlay">
@@ -65,7 +170,7 @@
         <section class="course-card card">
           <a href="#">
             <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+              src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`"
               alt="learning guitar course"
             />
             <div class="image-overlay">
@@ -77,7 +182,7 @@
         <section class="course-card card">
           <a href="#">
             <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+              src="https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80`"
               alt="learning guitar course"
             />
             <div class="image-overlay">
@@ -89,7 +194,7 @@
         <section class="course-card card">
           <a href="#">
             <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+              src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80`"
               alt="learning guitar course"
             />
             <div class="image-overlay">
@@ -101,7 +206,7 @@
         <section class="course-card card">
           <a href="#">
             <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+              src="https://images.unsplash.com/photo-1571645163064-77faa9676a46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`"
               alt="learning guitar course"
             />
             <div class="image-overlay">
@@ -113,79 +218,7 @@
         <section class="course-card card">
           <a href="#">
             <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-              alt="learning guitar course"
-            />
-            <div class="image-overlay">
-              <h2 class="image-title">Your Image Title</h2>
-            </div>
-          </a>
-        </section>
-
-        <section class="course-card card">
-          <a href="#">
-            <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-              alt="learning guitar course"
-            />
-            <div class="image-overlay">
-              <h2 class="image-title">Your Image Title</h2>
-            </div>
-          </a>
-        </section>
-
-        <section class="course-card card">
-          <a href="#">
-            <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-              alt="learning guitar course"
-            />
-            <div class="image-overlay">
-              <h2 class="image-title">Your Image Title</h2>
-            </div>
-          </a>
-        </section>
-
-        <section class="course-card card">
-          <a href="#">
-            <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-              alt="learning guitar course"
-            />
-            <div class="image-overlay">
-              <h2 class="image-title">Your Image Title</h2>
-            </div>
-          </a>
-        </section>
-
-        <section class="course-card card">
-          <a href="#">
-            <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-              alt="learning guitar course"
-            />
-            <div class="image-overlay">
-              <h2 class="image-title">Your Image Title</h2>
-            </div>
-          </a>
-        </section>
-
-        <section class="course-card card">
-          <a href="#">
-            <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
-              alt="learning guitar course"
-            />
-            <div class="image-overlay">
-              <h2 class="image-title">Your Image Title</h2>
-            </div>
-          </a>
-        </section>
-
-        <section class="course-card card">
-          <a href="#">
-            <img
-              src="https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg"
+              src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`"
               alt="learning guitar course"
             />
             <div class="image-overlay">
@@ -195,28 +228,31 @@
         </section>
       </div>
 
-      <section class="flex-container">
-        <article class="article flex__item--1x2">
-          <div class="article-body">
-            <p class="separator">
-              CH 12 kljh
-              <svg class="line" height="1" width="100px">
-                <line x1="0" y1="0" x2="10vw" y2="0" />
-              </svg>
-            </p>
-            <h2 class="article-title">The Designer's Role</h2>
-            <p class="article-text">text</p>
-          </div>
-          <div class="article-footer">
-            <a class="btn btn--primary" href="#">Read more...</a>
-          </div>
-        </article>
+      <section class="block">
+        <div class="flex-container">
+          <article class="article flex__item--1x2">
+            <div class="article-body">
+              <p class="separator">
+                CH 12 kljh
+                <svg class="line" height="1" width="100px">
+                  <line x1="0" y1="0" x2="10vw" y2="0" />
+                </svg>
+              </p>
+              <h2 class="article-title">The Designer's Role</h2>
+              <p class="article-text">text</p>
+            </div>
+            <div class="article-footer">
+              <a class="btn btn--primary" href="#">Read more...</a>
+            </div>
+          </article>
 
-        <div class="flex__item--1x2">
-          <img style="width: 100%" src="./images/minimal1.jpg" alt="" />
+          <div class="flex__item--1x2">
+            <img style="width: 100%" src="./images/minimal1.jpg" alt="" />
+          </div>
         </div>
       </section>
     </main>
+
     <footer>
       <section class="footer-block">
         <div class="footer-section">
