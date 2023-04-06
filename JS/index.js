@@ -25,19 +25,19 @@ const slider = () => {
 // slider();
 const banners = [
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png",
-    title: "title1",
-    text: "it is related to title1",
+    img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`",
+    title: "Unlock Your Potential",
+    text: "Join Our Personal Development Workshop Today!",
   },
   {
-    img: "https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg",
-    title: "title2",
-    text: "it is related to title2",
+    img: "https://images.unsplash.com/photo-1659301254614-8d6a9d46f26a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`",
+    title: "Master Your Skills",
+    text: "Attend Our Professional Development Seminar!",
   },
   {
-    img: "https://www.searchenginejournal.com/wp-content/uploads/2022/06/bing-filter-search2-62c6eae862f5f-sej.png",
-    title: "title3",
-    text: "it is related to title3",
+    img: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`",
+    title: "Invest in Your Future",
+    text: "Learn from the Experts at Our Career Growth Workshop!",
   },
 ];
 
@@ -79,3 +79,21 @@ function onPrevClick() {
 }
 
 setInterval(onNextClick, 6000);
+
+// Scroll To Top Button
+
+let scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+scrollToTopBtn.addEventListener("click", topFunction);
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

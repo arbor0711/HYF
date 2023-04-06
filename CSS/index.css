@@ -29,13 +29,15 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
+  background-color: var(--color-headings);
+  margin: 0;
+  padding: 0;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--color-headings);
-  font-family: "Oleo Script Swash Caps", cursive;
+  color: var(--color-secondary);
   line-height: 1.1;
   margin-bottom: 1rem;
 }
@@ -87,9 +89,19 @@ p {
   color: #fff;
 }
 
-.btn--primary:hover {
+.btn--primary:is(:hover, :focus) {
   background-color: #282828;
   box-shadow: inset 1rem 1rem rgba(22, 0, 81, 0.118);
+}
+
+.btn--outline {
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+.btn--outline:is(:hover, :focus)) {
+  background-color: var(--color-headings);
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -165,7 +177,7 @@ p {
   transition: all 0.3s;
   margin: 0;
 }
-.navbar__item:hover {
+.navbar__item:is(:hover, :focus) {
   border-left: 1px solid #232323;
   border-right: 1px solid #232323;
   text-shadow: #fff 0.5px 0 3px;
@@ -174,6 +186,11 @@ p {
 .navbar__item {
   border-top: 1px solid #232323;
   padding: 1rem 0;
+}
+
+.navbar-mobile-version {
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar__icon {
@@ -221,38 +238,31 @@ p {
 
 .hero-headline {
   position: absolute;
-  top: 20%;
   left: 10%;
-  text-shadow: var(--color-headings) 1px 0 10px;
 }
 /* FIXME: */
 .hero-headline h2,
 p {
   color: var(--color-secondary);
+  text-shadow: var(--color-headings) 1px 0 10px;
 }
 
 .hero-title {
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .hero-text {
   font-size: 2rem;
-  margin-bottom: 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 300px; /* adjust as needed */
-  max-height: 5rem; /* adjust as needed */
-  line-height: 1.5rem; /* adjust as needed */
+  margin-bottom: 10px;
+  line-height: 1.5rem;
 }
 
 .slider-btn {
   position: absolute;
   opacity: 0.5;
   top: 50%;
-  /* transform: translateY(-50%); */
   font-size: 1em;
   background: transparent;
   border: none;
@@ -272,6 +282,9 @@ p {
   .hero-title {
     font-size: 6rem;
   }
+  .hero-headline {
+    top: 20%;
+  }
 }
 
 /* Course card */
@@ -288,7 +301,7 @@ p {
 .course-card img {
   width: 100%;
   height: 100%;
-  transition: filter 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .image-overlay {
@@ -299,7 +312,7 @@ p {
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .image-overlay h2 {
@@ -309,12 +322,13 @@ p {
   padding: auto;
 }
 
-.course-card:hover img {
+.course-card:is(:hover, :focus) img {
   -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
   filter: blur(2px);
+  transform: scale(1.05);
 }
 
-.course-card:hover .image-overlay {
+.course-card:is(:hover, :focus) .image-overlay {
   opacity: 1;
 }
 
@@ -383,4 +397,77 @@ p {
 
 .footer-column ul > li {
   text-decoration: none;
+}
+
+/* Search block */
+
+.search-block {
+  background-color: black;
+  height: 60px;
+  padding: 1rem 3rem;
+}
+.search-form {
+  display: flex;
+  justify-content: space-around;
+}
+.search-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 40px;
+  display: inline-block;
+  flex-basis: 65%;
+  display: flex;
+}
+
+.search-input {
+  height: 40px;
+  border: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.search-btn {
+  border: 0;
+  background-color: white;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.search-btn:is(:hover, :focus) {
+  transform: scale(1.1);
+}
+
+.sortby {
+  flex-basis: 20%;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Block */
+.block {
+  padding: 2rem 0;
+  border-bottom: 1px solid #232323;
+}
+
+/* Scroll To Top Button */
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 1; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
