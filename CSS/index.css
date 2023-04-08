@@ -415,8 +415,6 @@ p {
 
 .search-block {
   background-color: black;
-  height: 60px;
-  padding: 1rem 3rem;
 }
 .search-form {
   display: flex;
