@@ -303,7 +303,6 @@ p {
 
 .course-card {
   position: relative;
-  width: 300px; /* adjust to your image size */
   border: 3px solid var(--color-headings);
   border-radius: 20px;
   overflow: hidden;
@@ -311,18 +310,8 @@ p {
 
 .course-card img {
   width: 100%;
-
-  transition: all 0.3s ease-in-out;
-}
-
-.image-overlay {
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
+  height: 300px;
+  object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
 
@@ -355,7 +344,8 @@ p {
 
 .card {
   max-width: 400px;
-  min-width: 300px;
+  min-width: 350px;
+  height: 300px;
   width: 30%;
   margin: 10px 50;
   background-color: #000630;
@@ -369,7 +359,7 @@ p {
     padding: 0;
   }
 }
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 780px) {
   .card {
     width: 100%;
     margin: auto 100px;
