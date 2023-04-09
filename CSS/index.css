@@ -202,8 +202,9 @@ p {
 
 .navbar__icon {
   /* TODO:correct the margin value(not hard codding) */
-  margin: 0.65rem 4rem;
-  width: 50px;
+  margin: auto 4rem;
+  width: 40px;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -320,9 +321,13 @@ p {
   width: 100%;
   position: absolute;
   bottom: -20px;
-  padding: 2rem;
+  padding: 1rem;
   color: var(--color-secondary);
   text-align: center;
+}
+
+.img-title h3 {
+  margin: 0;
 }
 
 .course-card:is(:hover, :focus) img {
@@ -365,11 +370,13 @@ p {
     margin: auto 100px;
   }
 }
+
 /* Page header */
 h1 {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-transform: capitalize;
-  margin-top: 3rem;
+  margin: 3rem auto;
 }
 
 /* Footer */
