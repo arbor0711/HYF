@@ -11,17 +11,6 @@ const collapse = () => {
 
 toggler.addEventListener("click", collapse);
 
-const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-const sliderRight = document.querySelector("#sliderButtonRight");
-const sliderLeft = document.querySelector("#sliderButtonLeft");
-
-const slider = () => {
-  // TODO: we should add id="hero__img" to image
-  const heroImg = document.querySelector("#heroImg");
-
-  console.log(heroImg.src);
-};
-
 // slider();
 const banners = [
   {
