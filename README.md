@@ -1,4 +1,4 @@
-Idea:
+Ideas:
 when you scroll down the page at some point
 a notification pop up page which says that the information of the page are fake
 with two button
